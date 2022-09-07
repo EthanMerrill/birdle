@@ -1,0 +1,9 @@
+{
+    "solutions": [
+        { "id": 1, "word": "cardinal"},
+        { "id": 2, "word": "bluejay"},
+        { "id": 3, "word": "eagle"},
+        { "id": 4, "word": "chickadee"},
+        { "id": 5, "word": "parrot"}
+    ]
+}
