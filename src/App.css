@@ -1,5 +1,33 @@
 .App {
   text-align: center;
+  /* background: darkslategrey;
+  height:100vh;
+  width: 100vw; */
+}
+
+.replay-cover{
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0px;
+  filter:blur(5px);
+  z-index: 30;
+}
+
+.blur{
+  filter:blur(5px)
+}
+
+.replay-button{
+  background-color: lightblue;
+}
+
+.confetti-wrapper{
+  position:fixed;
+  top:0px;
 }
 
 .flex-row{

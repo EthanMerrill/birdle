@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const useWordle = (solution) => {
     const [turn, setTurn] = useState(0)
@@ -50,17 +52,27 @@ const useWordle = (solution) => {
             setCurrentGuess(currentGuess + key)
         } else if (key === 'Backspace'){
             setCurrentGuess(currentGuess.slice(0, -1))
-        } else if (key === 'Enter'){
+        } else if (key === 'Enter' && !isCorrect){
             // only add a guess if the turn is less than 5 and the user has typed something
             if(turn < 5 && currentGuess !== '' && solution.length === currentGuess.length ){
+                if (currentGuess === solution) {
+                    addGuess(currentGuess);
+                    setHistory([...history, currentGuess]);
+                    setIsCorrect(true)
+                    return
+                }
                 addGuess(currentGuess);
                 setHistory([...history, currentGuess]);
                 setCurrentGuess('');
-                if(currentGuess===solution){
-                    isCorrect(true)
-                }
+                
+            }else if (key === "Enter" && isCorrect){
+                setHistory([])
+                setCurrentGuess('');
+                setIsCorrect(false)
+                
             }else{
-                console.log('Invalid guess')
+                console.log('invalid guess')
+                toast('Guess the full number of letters')
             }
 
         }
