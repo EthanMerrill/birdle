@@ -46,7 +46,7 @@ const useWordle = (solution) => {
     // handle keyup event and track current guess 
     // if user presses enter, add the new guess
     const handleKeyUp = ({key}) => {
-        if(/^[A-Za-z]$/.test(key)){
+        if(/^[A-Za-z]$/.test(key) && currentGuess.length<solution.length){
             setCurrentGuess(currentGuess + key)
         } else if (key === 'Backspace'){
             setCurrentGuess(currentGuess.slice(0, -1))
@@ -56,19 +56,14 @@ const useWordle = (solution) => {
                 addGuess(currentGuess);
                 setHistory([...history, currentGuess]);
                 setCurrentGuess('');
+                if(currentGuess===solution){
+                    isCorrect(true)
+                }
             }else{
                 console.log('Invalid guess')
             }
 
-
         }
-        // if(key === 'Enter'){
-        //     addGuess(currentGuess);
-        //     setCurrentGuess('');
-        // } else {
-        //     setCurrentGuess(currentGuess + key);
-        // }
-        console.log(currentGuess);
     }
     return {turn, currentGuess, guesses, isCorrect, handleKeyUp}
 

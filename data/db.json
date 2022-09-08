@@ -1,9 +1,9 @@
 {
     "solutions": [
-        { "id": 1, "word": "cardinal"},
-        { "id": 2, "word": "bluejay"},
-        { "id": 3, "word": "eagle"},
-        { "id": 4, "word": "chickadee"},
-        { "id": 5, "word": "parrot"}
+        { "id": 1, "word": "cardinal", "call":"https://www.allaboutbirds.org/guide/assets/sound/551661.mp3"},
+        { "id": 2, "word": "bluejay", "call":"https://www.allaboutbirds.org/guide/assets/sound/549761.mp3"},
+        { "id": 3, "word": "crow", "call":"https://www.allaboutbirds.org/guide/assets/sound/549833.mp3"},
+        { "id": 4, "word": "chickadee", "call":"https://www.allaboutbirds.org/guide/assets/sound/549876.mp3"},
+        { "id": 5, "word": "carolina wren", "call":"https://www.allaboutbirds.org/guide/assets/sound/550231.mp3"}
     ]
 }
