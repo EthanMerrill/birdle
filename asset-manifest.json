@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/birdle/static/css/main.6964896d.css",
+    "main.js": "/birdle/static/js/main.768eb9cb.js",
+    "static/js/787.8edfe0d5.chunk.js": "/birdle/static/js/787.8edfe0d5.chunk.js",
+    "static/media/logo.svg": "/birdle/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/birdle/index.html",
+    "main.6964896d.css.map": "/birdle/static/css/main.6964896d.css.map",
+    "main.768eb9cb.js.map": "/birdle/static/js/main.768eb9cb.js.map",
+    "787.8edfe0d5.chunk.js.map": "/birdle/static/js/787.8edfe0d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6964896d.css",
+    "static/js/main.768eb9cb.js"
+  ]
+}
